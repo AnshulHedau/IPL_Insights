@@ -67,5 +67,12 @@ ne.fit(X_train,y_train)
 y_pred=ne.predict(X_test)
 from sklearn.metrics import accuracy_score
 acc= accuracy_score(y_test,y_pred)  
-  
-
+final=pd.DataFrame()
+final['team1']=X_test[:,1]
+final['team2']=X_test[:,2]
+#final['venue']=X_test[:,5]
+final['winner']=y_pred
+ven=labelencoder7.inverse_transform(list(X_test[:,5])) 
+ven=list(ven)    
+final=final.replace(to_replace=[0,1,2,3,4,5,6,7,8,9,10,11,12,13], value=teams)
+final['venue']=ven
