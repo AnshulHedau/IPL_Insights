@@ -6,3 +6,13 @@ The analytics have been divided into three files: *[IPL - Batsman Analysis.ipynb
 
 ## Dataset
 The IPL dataset has been downloaded from Kaggle and could be found at [this link](https://www.kaggle.com/manasgarg/ipl). The dataset contains two files *deliveries.csv* and *matches.csv*.
+
+## Visual Insights
+#### Batsman Performance Graph (V.Kohli)
+<img src = "images/Batsman_Performance.png" align = "center">
+
+#### Comparison of Strikerate vs Runs Scored
+<img src = "images/Comparison_SR_vs_Runs.png" align = "center">
+
+#### Comparison of Boundries vs Runs
+<img src = "images/Comparison_Boundries_vs_Runs.png" align = "center">
